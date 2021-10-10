@@ -16,7 +16,7 @@ void setup() {
 }
 
 void draw() {
-  stroke(1);
+  /*stroke(1);
   background(1);
   
   //FirstLayer
@@ -63,7 +63,7 @@ void draw() {
 
   a+= 0.2;
   
-  /*
+  */
     stroke(1);
   background(1);
   pushMatrix();
@@ -113,5 +113,5 @@ void draw() {
 
   a+= 0.2;
    popMatrix();
-   */
+   
 }
