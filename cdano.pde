@@ -4,6 +4,7 @@ int size_30 = 30;
 int size_35 = 35;
 int size_50 = 50;
 int switchScale = 1;
+float y =0;
   float a;
 
 void setup() {
@@ -60,15 +61,24 @@ void draw() {
   circle((width /2) + 240, (height/2) + 0, size_20 * sin(radians(a)) );
   
   
-
   a+= 0.2;
   
   */
-    stroke(1);
-  background(1);
+   // stroke(0);
+  background(0,0, abs(sin(radians(y + 10)) * 100));
   pushMatrix();
   translate(400, 400);
   rotate(radians(a));
+  
+  fill(255);
+  circle( 0,  0, 610);
+  
+  fill(0,0, abs(sin(radians(y + 10)) * 100));
+  circle( 0,  0, 550);
+  
+
+
+  fill(255);
   //FirstLayer
   circle( - 30,  - 50, size_50  * sin(radians(a)));
   circle( - 30,  + 50, size_50 * sin(radians(a)));
@@ -108,10 +118,48 @@ void draw() {
   circle( + 140,  + 200, size_20 * sin(radians(a)));
   circle( - 240,  - 0, size_20 * sin(radians(a)));
   circle( + 240,  + 0, size_20 * sin(radians(a)) );
+  popMatrix();
   
+  
+  
+textSize(30);
+fill(0,0, abs(sin(radians(y + 10)) * 100));
+
+pushMatrix();
+translate(400,400);
+rotate(radians(-a));
+
+text("ADA", -30, 300);
+//text("ADA", -30, -300);
+
+  rotate(radians(45));
+  text("ADA", -30, 300);
+  
+  rotate(radians(45));
+  text("ADA", -30, 300);
+  
+  rotate(radians(45));
+  text("ADA", -30, 300);
+  
+  rotate(radians(45));
+  text("ADA", -30, 300);
+  
+  rotate(radians(45));
+  text("ADA", -30, 300);
+  
+  rotate(radians(45));
+  text("ADA", -30, 300);
+  
+  rotate(radians(45));
+  text("ADA", -30, 300);
   
 
+  
+  rotate(radians(360));
+  text("ADA", -30, 300);
+  
   a+= 0.2;
+  y+= 0.1;
    popMatrix();
    
 }
